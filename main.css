@@ -38,7 +38,7 @@ aside h3{
 }
 
 #about_me img {
-    width: 8%;
+    height: 200px;
     border-radius: 8px;
 }
 
@@ -64,6 +64,7 @@ aside h3{
   background-color: var(--primary);
   margin-top: 0;
 }
+
 h1{
   text-shadow: 3px 2px 0 #000;
 }
@@ -141,12 +142,23 @@ header {
   opacity: 1;  
 }
 
+.project_item * {
+  text-decoration: none;
+  margin: auto;
+}
+
+  .project_item a{
+  display: flex;
+  flex-direction: column;
+  justify-content: center:
+  align-content: center;
+}
+
 #skills {
   display: flex;
   flex-direction: column;
   align-contents: center;
   flex-wrap: wrap;
-  list-style: non;
   padding: 1.5rem;  
 }
 
