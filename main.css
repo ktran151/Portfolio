@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: white;
+}
+
+body {
+   background-image: url("https://farm3.staticflickr.com/3106/2579997375_669a0a89ce_o.jpg");
+  background-size: cover;
+}
+
+:root { 
+  font-size: 16px;
+  --grid-gap: 20px;
+  --primary: #0783FF;
+  --secondary: #53A9FF;
+  --dark: #03427F;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  align-contents: center;
+  background-color: var(--secondary);
+  padding: 1rem;
+}
+aside h3{
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 100px 1fr 5fr 1fr;
+  grid-row-gap: 20px;
+  background-color: var(--dark);
+  margin: 3rem ;
+  width: 90%;
+ 
+}
+
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: var(--primary);
+  padding: 1rem  ;
+}
+
+#about_me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+#footer {
+  display: grid;
+  grid-template-column: 1fr 1fr;
+  justify-content: center;
+  padding: 2rem;
+  background-color: var(--primary);
+}
+
+#main_content{
+  display: grid;
+  grid-template-columns: 7fr 3fr
+}
+
+#main-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#main-nav a {
+  text-decoration: none;
+  background-color: var(--secondary);
+  border: 4px solid;
+  padding: 0.5rem 0.8rem;
+  border-radius: 18%;
+  margin: 0.5rem 1rem;
+}
+
+#projects{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px 15px;
+}
+
+.project_item{
+  margin: auto;
+}
+
+#skills {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  list-style: non;
+  padding: 1rem;
+  
+}
+
+#social-media {
+  text-decoration: none;
+  list-style: none;
+  text-size: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: .5rem .5rem;
+}
+
+.contact_heading {
+  text-align: center;
+}
