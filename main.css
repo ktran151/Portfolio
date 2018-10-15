@@ -30,6 +30,24 @@ aside h3{
   text-align: center;
 }
 
+
+
+#about_me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+#about_me img {
+    width: 40%;
+    border-radius: 8px;
+}
+
+.contact_heading {
+  text-align: center;
+}
+
 .container {
   display: grid;
   grid-template-rows: 100px 1fr 5fr 1fr;
@@ -38,13 +56,6 @@ aside h3{
   margin: 3rem;
   box-shadow: 2px 2px 2px 2px black;
   width: 90%; 
-}
-
-#about_me {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
 }
 
 #footer {
@@ -161,6 +172,3 @@ header {
   text-align: center;
 }
 
-.contact_heading {
-  text-align: center;
-}
