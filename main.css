@@ -7,7 +7,7 @@
 }
 
 body {
-   background-image: url("images/mountain-bg.jpg");
+   background-image: url("Images/mountain-bg.jpg");
   background-size: cover;
 }
 
@@ -126,11 +126,11 @@ header {
   border-radius: 8px;
   maximum-width
   opacity: 0.8;
+  width:100%;
 }
 
 .project_item img:hover {
-  opacity: 1;
-  
+  opacity: 1;  
 }
 
 #skills {
