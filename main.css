@@ -38,8 +38,13 @@ aside h3{
 }
 
 #about_me img {
-    height: 200px;
+    width: 180px;
     border-radius: 8px;
+}
+
+#about_me_content {
+    display: flex;
+    align-items: center;
 }
 
 .contact_heading {
@@ -48,7 +53,7 @@ aside h3{
 
 .container {
   display: grid;
-  grid-template-rows: 100px 300px 5fr 1fr;
+  grid-template-rows: 100px 300px 5fr;
   grid-row-gap: 20px;
   background-color: var(--dark);
   margin: 3rem;
@@ -56,7 +61,7 @@ aside h3{
   width: 90%; 
 }
 
-#footer {
+footer {
   display: grid;
   grid-template-column: 1fr 1fr;
   justify-content: center;
@@ -150,8 +155,7 @@ header {
   .project_item a{
   display: flex;
   flex-direction: column;
-  justify-content: center:
-  align-content: center;
+  justify-content: center;
 }
 
 #skills {
