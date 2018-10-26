@@ -1,0 +1,23 @@
+{
+  "name": "ktran151.github.io",
+  "version": "1.0.0",
+  "description": "pictures taken from creativecommons.org and pexels.com\r profile pic cred: Amy Ann Photography",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ktran151/ktran151.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ktran151/ktran151.github.io/issues"
+  },
+  "homepage": "https://github.com/ktran151/ktran151.github.io#readme",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
+}
