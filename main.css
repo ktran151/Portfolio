@@ -7,16 +7,21 @@
 }
 
 body {
-   background-image: url("Images/mountain-bg.jpg");
+  /*background-image: url("images/mountain-bg.jpg");*/
   background-size: cover;
+  background-color: #aaa;
 }
 
 :root { 
-  font-size: 16px;
+  font-size: 18px;
   --grid-gap: 20px;
   --primary: #0783FF;
   --secondary: #53A9FF;
   --dark: #03427F;
+}
+
+#about_me_content a{
+  font-size: 20px;
 }
 
 aside {
@@ -35,6 +40,7 @@ aside h3{
   flex-direction: column;
   align-items: center;
   padding: 1rem;
+  color: black;
 }
 
 #about_me img {
@@ -55,10 +61,11 @@ aside h3{
   display: grid;
   grid-template-rows: 100px 300px 5fr;
   grid-row-gap: 20px;
-  background-color: var(--dark);
-  margin: 3rem;
-  box-shadow: 2px 2px 2px 2px black;
-  width: 90%; 
+  /*background-color: var(--dark);
+  box-shadow: 2px 2px 2px 2px black;*/
+  width: 90%;
+  margin: 3rem; 
+  opacity: 1;
 }
 
 footer {
@@ -71,15 +78,18 @@ footer {
 }
 
 h1{
-  text-shadow: 3px 2px 0 #000;
+  /*text-shadow: 3px 2px 0 #000;*/
+  color: var(--dark);
+  align-self: center;
+  font-size: 55px;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  background-color: var(--primary);
-  padding: 1rem  ;
+  background-color: white;
+  padding: 1rem ;
 }
 
 #main_content{
@@ -152,10 +162,13 @@ header {
   margin: auto;
 }
 
-  .project_item a{
+.project_item a{
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.project_item p{
+  font-size: 15px;
 }
 
 #skills {
