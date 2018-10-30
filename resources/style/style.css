@@ -45,7 +45,7 @@ aside h3{
 	text-align:center
 }
 
-/* The dots/bullets/indicators */
+/* The dots/pages for carousel */
 .dot {
   height: 15px;
   width: 15px;
@@ -59,7 +59,6 @@ aside h3{
 .dot:hover {
   background-color: #fff;
 }
-
 
 #main-nav a {
     color: black;
@@ -76,7 +75,6 @@ aside h3{
 
 /* Next & previous buttons */
 .prev, .next {
-  cursor: pointer;
   position: absolute;
   top: 50%;
   width: auto;
@@ -95,7 +93,7 @@ aside h3{
 
 .project_item {
   display: none;
-  max-width: 1000px;
+  max-width: 500px;
   text-decoration: none;
 /*  margin: auto;
   
@@ -105,4 +103,10 @@ aside h3{
   border-radius: 10%;
   border: 2px solid midnightBlue;
   margin: 1rem;*/
+}
+
+
+.project_item:hover{
+  background: var(--secondary);
+  transition: 0.8s;
 }

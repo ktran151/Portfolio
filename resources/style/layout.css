@@ -7,8 +7,6 @@
 }
 
 
-
-
 #about_me_content a{
   font-size: 20px;
 }
@@ -102,13 +100,12 @@ header {
 
 #main-nav {
     display: none;
-    position: absolute;
+    position: relative;
     background-color: #f1f1f1;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1; 
     margin: 1rem;
-
 }
 
 
@@ -129,12 +126,6 @@ header {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-}
-
-
-.project_item:hover{
-  background: var(--secondary);
-  transition: 0.8s;
 }
 
 .project_item img {
