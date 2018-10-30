@@ -1,4 +1,4 @@
-const { addListener, showChildElement, showElement } = require('../js/dom.js')
+const { addListener, showElement } = require('../js/dom.js')
 
 describe('dropBar', () => {
 	test('nav  bar is not showing', () =>{

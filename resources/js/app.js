@@ -1,28 +1,20 @@
-let slideIndex = 1;
 
 main()
 
 function main() {
 
-	const dropButton = document.querySelector('#dropbutton')
-	const nav = document.querySelector('#main-nav')
+
+	//nav drop menu
 	addListener(dropbutton, 'click', event => {
 		toggleShowElement(nav)
 	})
-
-
-
+	//carousel
+	dotsToSlides();
+	showSlides(slideIndex);
+	// changeSlides('#prev', -1);
+	// changeSlides('#next', 1);
 // const aboutPopup = document.querySelector('')
 
 
-
 }
 
-function showSlides(n) {
-	let i = 0;
-	const slides = document.querySelectorAll('.project_item')
-	const dots = document.querySelectorAll('dot')
-	slides.forEach(slide => {
-		i++;
-	})
-}
