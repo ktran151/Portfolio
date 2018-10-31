@@ -1,9 +1,13 @@
 const slides = document.querySelectorAll('.project_item')
 const dots = document.querySelectorAll('.dot')
 
-const next = document.querySelectorAll('#next')
-const prev = document.querySelectorAll('#prev')
-let slideIndex = 1;
+const next = document.querySelector('#next')
+const prev = document.querySelector('#prev')
+let slideIndex = 0;
+
+const nav = document.querySelector('#main-nav')
+
+const descriptions = document.querySelectorAll('#project-description')
 
 function addListener(element, eventType, callback){
 	element.addEventListener(eventType, callback)
@@ -19,7 +23,7 @@ function toggleShowElement(elem) {
 
 function showSlides(n) {
 	let i = 0;
-	if (n > slides.length) {n = 1} //loop to first
+	if (n > slides.length) {n = 0} //loop to first
   	if (n < 1) {n = slides.length} //loop to last
   	for (i = 0; i < slides.length; i++) { //make all not show
       slides[i].style.display = 'none'; 
@@ -44,6 +48,14 @@ function changeSlides(button, n) {
 	// button.addEventListener('click', event => slideIndex += n)
 	// addListener(button, 'click', event => slideIndex += n)
 }
+
+function slideDescriptionListeners(slides, descriptions) {
+	for(i = 0; i < slides.length; i++){
+		descriptions[i].style.display = 'none'
+		addListener(slides[i], 'mouseover', event => toggleShowElement(descriptions[i]))
+	}
+}
+
 module.exports = {
 	addListener,
 	toggleShowElement,
