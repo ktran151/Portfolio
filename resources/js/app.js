@@ -19,5 +19,8 @@ function main() {
 	//project description
 	slideDescriptionListeners(slides, descriptions);
 
+	//modal
+	modalOn();
+
 }
 

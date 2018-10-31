@@ -1,13 +1,17 @@
 const slides = document.querySelectorAll('.project_item')
 const dots = document.querySelectorAll('.dot')
-
 const next = document.querySelector('#next')
 const prev = document.querySelector('#prev')
 let slideIndex = 0;
 
+const descriptions = document.querySelectorAll('#project-description')
 const nav = document.querySelector('#main-nav')
 
-const descriptions = document.querySelectorAll('#project-description')
+const modalButton = document.querySelector('#h2')
+const modal = document.querySelector('#modal')
+const aboutMe = document.querySelector('#modal p')
+
+
 
 function addListener(element, eventType, callback){
 	element.addEventListener(eventType, callback)
@@ -44,16 +48,24 @@ function dotsToSlides(){
     }
 }
 
-function changeSlides(button, n) {
-	// button.addEventListener('click', event => slideIndex += n)
-	// addListener(button, 'click', event => slideIndex += n)
-}
+// function changeSlides(button, n) {
+// 	// button.addEventListener('click', event => slideIndex += n)
+// 	// addListener(button, 'click', event => slideIndex += n)
+// }
 
 function slideDescriptionListeners(slides, descriptions) {
 	for(i = 0; i < slides.length; i++){
 		descriptions[i].style.display = 'none'
 		addListener(slides[i], 'mouseover', event => toggleShowElement(descriptions[i]))
 	}
+}
+
+function  modalOn() {
+	addListener(modalButton, 'click', event =>{
+		if (event.target !== aboutMe){
+			toggleShowElement(modal)
+		}
+	})
 }
 
 module.exports = {
