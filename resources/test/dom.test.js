@@ -19,3 +19,20 @@ describe('dropBar', () => {
 
 	})
 })
+
+describe('project description', () => {
+	test('description not showing', () => {
+		//arrange
+		const description = document.createElement('p')
+		const figure = document.createElement('figure')
+		description.style.display = 'none'
+		figure.appendChild(description)
+		addListener(figure, 'click', event => {showChildElement(figure, 'p')})
+
+		//act
+		figure.click()
+
+		//assert
+		expect(description.style.display).not.toBe('none')
+	})
+})

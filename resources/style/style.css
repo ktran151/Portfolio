@@ -15,9 +15,15 @@ body {
 :root { 
   font-size: 18px;
   --grid-gap: 20px;
-  --primary: #4D98FF;
+  --primary: #2771CC;
   --secondary: #53A9FF;
   --dark: #264C7F;
+}
+
+
+#my-description{
+  display: none;
+  font-size: 30px;
 }
 
 aside {
@@ -38,7 +44,7 @@ aside h3{
 }
 
 .container {
-	opacity: 1;
+	/*opacity: 1;*/
 }
 
 #dots{
@@ -60,6 +66,12 @@ aside h3{
   background-color: #fff;
 }
 
+h2 {
+  background-color: var(--secondary);
+  padding: 2rem;
+  border-radius: 15px 50px; 
+}
+
 #main-nav a {
     color: black;
     padding: 12px 16px;
@@ -75,7 +87,8 @@ aside h3{
 
 /* Next & previous buttons */
 .prev, .next {
-  position: absolute;
+  display: none;
+  /*position: absolute;*/
   top: 50%;
   width: auto;
   margin-top: -22px;
@@ -83,7 +96,7 @@ aside h3{
   color: white;
   font-weight: bold;
   font-size: 18px;
-  transition: 0.6s ease;
+  transition: 0.6s;
   border-radius: 0 3px 3px 0;
 }
 
@@ -91,22 +104,32 @@ aside h3{
   background-color: rgba(0,0,0,0.8);
 }
 
+#projects{
+  max-width: 800px;
+  margin: auto;
+  background-color: var(--primary);
+  padding: 2rem;
+  }
+
 .project_item {
   display: none;
   max-width: 500px;
   text-decoration: none;
-/*  margin: auto;
+  padding: 2rem;
+  /*  margin: auto;
   
   box-shadow: 1px 2px 3px black;
   background-color: var(--primary);
-  padding: 2rem;
+
   border-radius: 10%;
   border: 2px solid midnightBlue;
   margin: 1rem;*/
 }
+  .project_item:hover{
+    background: var(--secondary);
+    transition: 0.8s;
+  }
 
-
-.project_item:hover{
-  background: var(--secondary);
-  transition: 0.8s;
+.project_item p {
+  display: none;
 }
