@@ -29,6 +29,12 @@ body {
     border-radius: 8px;
 }
 
+#about-me-title {
+  background-color: var(--secondary);
+  padding: 1rem 2rem;
+  border-radius: 15px 50px; 
+}
+
 aside {
   background-color: var(--secondary);
 }
@@ -36,18 +42,16 @@ aside {
 aside h3{
   text-align: center;
 }
-
-
 .contact_heading {
   text-align: center;
 }
 
 .container {
-	/*opacity: 1;*/
+  /*opacity: 1;*/
 }
 
 #dots{
-	text-align:center
+  text-align:center
 }
 
 /* The dots/pages for carousel */
@@ -72,12 +76,6 @@ h1{
   font-size: 55px;
 }
 
-#about-me-title {
-  background-color: var(--secondary);
-  padding: 1rem 2rem;
-  border-radius: 15px 50px; 
-}
-
 #main-nav a {
     color: black;
     padding: 12px 16px;
@@ -87,7 +85,7 @@ h1{
 }
 
 #my-description {
-    width: 50%;
+    width: 60%;
     font-size: 20px;
 }
 
@@ -98,8 +96,6 @@ h1{
 
 /* Next & previous buttons */
 .prev, .next {
-  display: none;
-  /*position: absolute;*/
   top: 50%;
   width: auto;
   margin-top: -22px;
