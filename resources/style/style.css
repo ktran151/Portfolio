@@ -20,18 +20,8 @@ body {
   --dark: #264C7F;
 }
 
-
-#my-description{
-  display: none;
-  font-size: 30px;
-}
-
-aside {
-	background-color: var(--secondary);
-}
-
-aside h3{
-  text-align: center;
+#about_me {
+  padding: 1rem;
 }
 
 #about_me img {
@@ -39,16 +29,29 @@ aside h3{
     border-radius: 8px;
 }
 
+#about-me-title {
+  background-color: var(--secondary);
+  padding: 1rem 2rem;
+  border-radius: 15px 50px; 
+}
+
+aside {
+  background-color: var(--secondary);
+}
+
+aside h3{
+  text-align: center;
+}
 .contact_heading {
   text-align: center;
 }
 
 .container {
-	/*opacity: 1;*/
+  /*opacity: 1;*/
 }
 
 #dots{
-	text-align:center
+  text-align:center
 }
 
 /* The dots/pages for carousel */
@@ -73,12 +76,6 @@ h1{
   font-size: 55px;
 }
 
-h2 {
-  background-color: var(--secondary);
-  padding: 2rem;
-  border-radius: 15px 50px; 
-}
-
 #main-nav a {
     color: black;
     padding: 12px 16px;
@@ -87,29 +84,9 @@ h2 {
     right: 0;
 }
 
-/* The Modal (background) */
-#modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 10rem; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-#modal p {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    font-size: 50px;
+#my-description {
+    width: 60%;
+    font-size: 20px;
 }
 
 .next {
@@ -119,8 +96,6 @@ h2 {
 
 /* Next & previous buttons */
 .prev, .next {
-  display: none;
-  /*position: absolute;*/
   top: 50%;
   width: auto;
   margin-top: -22px;
@@ -162,6 +137,6 @@ h2 {
     transition: 0.8s;
   }
 
-.project_item p {
-  display: none;
+.project_description {
+  display: ;
 }
