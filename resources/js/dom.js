@@ -48,14 +48,14 @@ function dotsToSlides(){
     }
 }
 
-// function changeSlides(button, n) {
-// 	// button.addEventListener('click', event => slideIndex += n)
-// 	// addListener(button, 'click', event => slideIndex += n)
-// }
+function changeSlides(button, n) {
+	button.addEventListener('click', event => slideIndex += n)
+	addListener(button, 'click', event => slideIndex += n)
+}
 
 function slideDescriptionListeners(slides, descriptions) {
 	for(i = 0; i < slides.length; i++){
-		descriptions[i].style.display = 'none'
+		console.log(descriptions[i])
 		addListener(slides[i], 'mouseover', event => toggleShowElement(descriptions[i]))
 	}
 }
