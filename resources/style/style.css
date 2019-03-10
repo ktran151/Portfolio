@@ -9,7 +9,7 @@
 body {
   /*background-image: url("images/mountain-bg.jpg");*/
   background-size: cover;
-  background-color: #aaa;
+  background-color: #bbb;
 }
 
 :root { 
@@ -44,6 +44,7 @@ aside h3{
 }
 .contact_heading {
   text-align: center;
+  font-size: 18px;
 }
 
 .container {
@@ -67,6 +68,13 @@ aside h3{
 
 .dot:hover {
   background-color: #fff;
+}
+
+#dropbutton {
+  font-weight: normal;
+  color: #fff;
+  font-size: 1rem;
+
 }
 
 h1{

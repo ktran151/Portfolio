@@ -22,10 +22,6 @@ aside {
   padding: 1rem;
 }
 
-#carousel-container {
-  position: relative;
-}
-
 .container {
   display: grid;
   grid-template-rows: 100px 1fr 350px 100px;
@@ -42,7 +38,6 @@ aside {
 
 footer {
   display: grid;
-  grid-template-column: 1fr 1fr;
   justify-content: center;
   padding: 2rem;
   background-color: var(--primary);
@@ -61,22 +56,22 @@ header {
 #header-links {
   position: relative;
   background-color: var(--dark);
-  padding: 0.5rem 0.8rem;
-
+  /*padding: 0.5rem 0.8rem;*/
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0.3rem;
 }
 
-#header-links a{
-  padding: 1rem 3rem;  
+#header-links *{
+  padding: 0.3rem 0.8rem;  
   text-decoration: none;
   background-color: #ccc;
   transition: 0.2s;
 }
 
-#header-links a:hover{
-  box-shadow: 
+#header-links *:hover{
   background-color: var(--secondary);
   box-shadow: 5px 2px 4px black;
-
 } 
 
 #main_content{
@@ -95,14 +90,8 @@ header {
     right: -3px;
     top: 46px;
 }
-
-
-#projects{
-/*  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 10px 15px;
-*/
+#projects {
+  position: relative;
 }
 
 .project-item {
@@ -114,7 +103,6 @@ header {
 
 .project_item img {
   border-radius: 8px;
-  max-width
   opacity: 0.8;
   width:100%;
 }

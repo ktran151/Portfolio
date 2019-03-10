@@ -2,7 +2,7 @@ const slides = document.querySelectorAll('.project_item')
 const dots = document.querySelectorAll('.dot')
 const next = document.querySelector('#next')
 const prev = document.querySelector('#prev')
-let slideIndex = 0;
+var slideIndex = 0;
 
 const descriptions = document.querySelectorAll('#project-description')
 const nav = document.querySelector('#main-nav')
