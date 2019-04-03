@@ -128,8 +128,7 @@ h1{
   }
 
 .project_item {
-  display: none;
-  max-width: 500px;
+  max-width: 400px;
   text-decoration: none;
   padding: 2rem;
   /*  margin: auto;
